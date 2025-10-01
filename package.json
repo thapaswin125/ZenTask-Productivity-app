@@ -1,0 +1,29 @@
+{
+  "name": "zentask",
+  "version": "1.0.0",
+  "description": "Mindful Productivity Through Energy Awareness",
+  "author": "thapaswin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thapaswin/zentask.git"
+  },
+  "keywords": [
+    "productivity",
+    "energy-management", 
+    "mindfulness",
+    "focus",
+    "ai-powered",
+    "task-management"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && python server.py",
+    "frontend": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "test": "cd backend && python -m pytest"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

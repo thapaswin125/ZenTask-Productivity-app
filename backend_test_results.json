@@ -1,0 +1,250 @@
+{
+  "timestamp": "2025-09-24T16:08:46.606951",
+  "total_tests": 14,
+  "passed_tests": 14,
+  "success_rate": 100.0,
+  "failed_tests": [],
+  "detailed_results": {
+    "Get Current Energy": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "level": 5,
+        "context": null
+      }
+    },
+    "Log Energy Level": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "a320f7a8-8c0d-4f92-9944-741c21aa3bd3",
+        "level": 8,
+        "timestamp": "2025-09-24T16:08:30.765639Z",
+        "context": "After morning coffee"
+      }
+    },
+    "Get Energy History": {
+      "success": true,
+      "status_code": 200,
+      "response": [
+        {
+          "id": "a320f7a8-8c0d-4f92-9944-741c21aa3bd3",
+          "level": 8,
+          "timestamp": "2025-09-24T16:08:30.765639+00:00",
+          "context": "After morning coffee"
+        },
+        {
+          "id": "89a7ba88-2527-43cf-8b2e-5a612639ed56",
+          "level": 5,
+          "timestamp": "2025-09-24T16:07:03.558453+00:00",
+          "context": null
+        },
+        {
+          "id": "3f0f802f-c120-4b80-8072-3d29755feca1",
+          "level": 3,
+          "timestamp": "2025-09-24T16:07:01.763910+00:00",
+          "context": null
+        },
+        {
+          "id": "b6f7f189-4221-41e5-913f-bc140c09a270",
+          "level": 10,
+          "timestamp": "2025-09-24T16:06:58.813575+00:00",
+          "context": null
+        },
+        {
+          "id": "a4cd0192-c838-489d-a760-afd35b4bea9a",
+          "level": 10,
+          "timestamp": "2025-09-24T16:06:55.692863+00:00",
+          "context": null
+        },
+        {
+          "id": "3a2afa8f-d782-47d5-91aa-b68be43522f9",
+          "level": 8,
+          "timestamp": "2025-09-24T16:06:22.669383+00:00",
+          "context": "After morning coffee"
+        },
+        {
+          "id": "f2768452-525c-44f5-84f2-e3bee40fdaaa",
+          "level": 5,
+          "timestamp": "2025-09-24T16:05:22.178111+00:00",
+          "context": null
+        },
+        {
+          "id": "c1118513-743c-41cc-99a7-a4699ec92140",
+          "level": 8,
+          "timestamp": "2025-09-24T16:02:48.580567+00:00",
+          "context": "After morning coffee - feeling energized!"
+        }
+      ]
+    },
+    "Create Task": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "d2872380-bd14-4710-955c-1a430b62368f",
+        "title": "Test Task - API Testing",
+        "description": "This is a test task created during API testing",
+        "energy_requirement": 6,
+        "estimated_duration": 45,
+        "priority": "high",
+        "category": "Testing",
+        "completed": false,
+        "created_at": "2025-09-24T16:08:31.008789Z",
+        "completed_at": null
+      }
+    },
+    "Get All Tasks": {
+      "success": true,
+      "status_code": 200,
+      "response": [
+        {
+          "id": "d2872380-bd14-4710-955c-1a430b62368f",
+          "title": "Test Task - API Testing",
+          "description": "This is a test task created during API testing",
+          "energy_requirement": 6,
+          "estimated_duration": 45,
+          "priority": "high",
+          "category": "Testing",
+          "completed": false,
+          "created_at": "2025-09-24T16:08:31.008789Z",
+          "completed_at": null
+        },
+        {
+          "id": "57daa821-e774-4858-bc27-be5dac51c988",
+          "title": "dfir",
+          "description": "the homework",
+          "energy_requirement": 5,
+          "estimated_duration": 30,
+          "priority": "medium",
+          "category": "",
+          "completed": true,
+          "created_at": "2025-09-24T16:07:24.202700Z",
+          "completed_at": "2025-09-24T16:07:32.334055Z"
+        },
+        {
+          "id": "6a81a56c-8ba0-4fb5-a73c-b652de797c7d",
+          "title": "Test Task - API Testing",
+          "description": "This is a test task created during API testing",
+          "energy_requirement": 6,
+          "estimated_duration": 45,
+          "priority": "high",
+          "category": "Testing",
+          "completed": true,
+          "created_at": "2025-09-24T16:06:22.743709Z",
+          "completed_at": "2025-09-24T16:06:23.027897Z"
+        }
+      ]
+    },
+    "Get Pending Tasks": {
+      "success": true,
+      "status_code": 200,
+      "response": [
+        {
+          "id": "d2872380-bd14-4710-955c-1a430b62368f",
+          "title": "Test Task - API Testing",
+          "description": "This is a test task created during API testing",
+          "energy_requirement": 6,
+          "estimated_duration": 45,
+          "priority": "high",
+          "category": "Testing",
+          "completed": false,
+          "created_at": "2025-09-24T16:08:31.008789Z",
+          "completed_at": null
+        }
+      ]
+    },
+    "Get Recommended Tasks": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "current_energy": 8,
+        "recommended_tasks": [
+          {
+            "id": "d2872380-bd14-4710-955c-1a430b62368f",
+            "title": "Test Task - API Testing",
+            "description": "This is a test task created during API testing",
+            "energy_requirement": 6,
+            "estimated_duration": 45,
+            "priority": "high",
+            "category": "Testing",
+            "completed": false,
+            "created_at": "2025-09-24T16:08:31.008789+00:00",
+            "completed_at": null
+          }
+        ],
+        "message": "Tasks optimized for your current energy level (8/10)"
+      }
+    },
+    "Complete Task": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "message": "Task completed successfully"
+      }
+    },
+    "Start Focus Session": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "id": "3a0f33eb-2add-4ef0-a36c-2697b2c63f06",
+        "task_id": null,
+        "duration": 25,
+        "energy_before": 7,
+        "energy_after": null,
+        "environment_type": "nature",
+        "productivity_rating": null,
+        "started_at": "2025-09-24T16:08:31.198848Z",
+        "completed_at": null
+      }
+    },
+    "Get Focus Session Stats": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "total_sessions": 3,
+        "completed_sessions": 1,
+        "average_productivity": 4.0
+      }
+    },
+    "Complete Focus Session": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "message": "Focus session completed"
+      }
+    },
+    "Get Dashboard Stats": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "current_energy": 8,
+        "total_tasks": 3,
+        "completed_tasks": 3,
+        "pending_tasks": 0,
+        "todays_focus_sessions": 3,
+        "completion_rate": 100.0
+      }
+    },
+    "Get AI Insight": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "insight": "Based on your recent energy levels and task completion patterns, here are some actionable strategies to boost your productivity:\n\n### 1. **Optimize Your Schedule**\n- **High-Energy Tasks:** Schedule your most demanding tasks (energy requirement 6+) during your peak energy times, which seem to be before and after your morning coffee (levels 8-10).\n- **Low-Energy Tasks:** In the afternoons when you experience lower energy (levels 5 and below), focus on lighter tasks (energy requirement 5 or less) or routine activities that require less cognitive effort.\n\n### 2. **Implement Focus Techniques**\n- **Pomodoro Technique:** Continue your focus sessions by using the Pomodoro method (25 minutes work, 5-minute break). Given your previous focus sessions rated a 4, try extending to 30 minutes of focused work followed by 10 minutes of rest. \n- **Environment Setup:** Ensure you're minimizing distractions during these sessions by creating a focused workspace.\n\n### 3. **Task Prioritization**\n- Use your energy levels to prioritize:\n  - **Morning:** Complete high-energy tasks like testing and problem-solving.\n  - **Afternoon:** Transition to lower-energy tasks or administrative work.\n\n### 4. **Recovery and Motivation**\n- **Midday Break:** Take a longer break around midday to recharge. Consider a brief walk or light stretching; this can elevate your energy levels for the afternoon.\n- **Reward Yourself:** After completing challenging tasks, treat yourself to a small reward to stay motivated.\n\n### 5. **Reflect and Adjust Regularly**\n- Monitor your energy and productivity ratings weekly. Assess what tasks are draining your energy and adjust your task selection accordingly.\n\n### Encouragement:\nYou've been doing great with your recent tasks! Keep tracking your energy, and you'll find your rhythm. Stay flexible with your schedule, and remember to listen to your body. You\u2019ve got this! \ud83d\ude80",
+        "timestamp": "2025-09-24T16:08:40.546287+00:00"
+      }
+    },
+    "Get Daily Summary": {
+      "success": true,
+      "status_code": 200,
+      "response": {
+        "summary": "### Daily Productivity Summary:\n\n**Energy Overview:**\n- **Current Energy Level:** 8 (high)\n- **Average Energy Level:** 7.125 (consistent)\n\n**Tasks Overview:**\n- **Tasks Created:** 3\n- **Tasks Completed:** 3 (100% completion rate!)\n\n### Insights and Patterns:\n- Your energy readings indicate a high level of motivation and focus today, which you successfully channeled into completing all your tasks. Well done!\n- Maintaining your average energy reflects a strong balance in your daily rhythm. \n\n### Suggestions for Tomorrow:\n1. **Leverage High Energy:** Schedule your most challenging or creative tasks during the early part of the day when you expect to have similar energy levels (8+).\n  \n2. **Plan for Breaks:** Include short breaks after each task (5-10 minutes) to recharge and maintain high productivity.\n\n3. **Task Prioritization:** Create 3 new tasks, aligned with your peak energy times. Prioritize tasks by importance and urgency to maximize effectiveness.\n\n4. **Reflect and Adjust:** At the end of the day, reflect on what worked well and adjust for the following days. Keep track of energy fluctuations to identify further patterns.\n\n### Motivation:\nYou're on a great trajectory. Keep harnessing this energy for your tasks tomorrow\u2014consistency is key, and you're proving you have what it takes! Let\u2019s aim for another 100% completion day! \ud83c\udf1f",
+        "data": {
+          "energy_readings": 8,
+          "avg_energy": 7.125,
+          "tasks_created": 3,
+          "tasks_completed": 3
+        }
+      }
+    }
+  }
+}
